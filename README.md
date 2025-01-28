@@ -1,5 +1,7 @@
 # Solana Yellowstone gRPC Token Monitor
 
+![Screenshot](snap.png)
+
 This project is a Python script designed to monitor Solana blockchain transactions for specific tokens using the Yellowstone gRPC service. It logs detailed information about each transaction involving the specified tokens.
 
 ## Features
@@ -26,7 +28,16 @@ This project is a Python script designed to monitor Solana blockchain transactio
    cd solana-yellowstone-grpc-top
    ```
 
-2. **Install Dependencies**
+2. **Set Up a Virtual Environment**
+
+   It's recommended to use a virtual environment to manage dependencies. Run the following commands:
+
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+
+3. **Install Dependencies**
 
    Use `pip` to install the required Python packages:
 
@@ -34,7 +45,7 @@ This project is a Python script designed to monitor Solana blockchain transactio
    pip install grpcio grpcio-tools base58
    ```
 
-3. **Create Configuration File**
+4. **Create Configuration File**
 
    Create a `config.json` file in the project directory with the following structure:
 
@@ -61,7 +72,6 @@ Run the script using Python:
 ```bash
 python main.py
 ```
-
 
 The script will start monitoring transactions and log detailed information about each transaction involving the specified tokens.
 
