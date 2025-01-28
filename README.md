@@ -42,7 +42,7 @@ This project is a Python script designed to monitor Solana blockchain transactio
    Use `pip` to install the required Python packages:
 
    ```bash
-   pip install grpcio grpcio-tools base58
+   python -m pip install -r requirements.txt
    ```
 
 4. **Create Configuration File**
